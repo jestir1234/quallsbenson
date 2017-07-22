@@ -9,6 +9,12 @@ h1 {
   padding: 0;
 }
 
+h4 {
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 13px;
+}
+
 p {
   text-align: left;
   color: white;
@@ -16,17 +22,21 @@ p {
   font-size: 12px;
 }
 
+
 .main-container {
   background-color: #fbe5d6;
   height: 100vh;
-  margin-left: 100px;
+  flex: 5;
   display: flex;
   flex-direction: column;
   background: #f0b7b7; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #ecc4c4, #7cafba); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #ecc4c4, #7cafba); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #ecc4c4, #7cafba); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #ecc4c4, #7cafba); /* Standard syntax */
+  background: -webkit-linear-gradient(left, #ecc4c4, #406c7c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ecc4c4, #406c7c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ecc4c4, #406c7c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ecc4c4, #406c7c); /* Standard syntax */
+  -webkit-box-shadow: -9px -1px 15px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px -1px 15px -6px rgba(0,0,0,0.75);
+  box-shadow: -9px -1px 15px -6px rgba(0,0,0,0.75);
 }
 
 .main-box-header {
@@ -37,28 +47,18 @@ p {
 }
 
 .main-row1 {
-  border: 1px solid blue;
   display: flex;
   flex-direction: row;
   flex: 1;
 }
 
 .main-row2 {
-  border: 1px solid blue;
   display: flex;
   flex-direction: row;
-  flex: 1;
-}
-
-.main-row3 {
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
+  flex: 2;
 }
 
 .main-row1-box1 {
-  border: 2px solid green;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -69,26 +69,84 @@ p {
 }
 
 .main-row1-box2 {
-  border: 2px solid green;
-  flex: 1
+  flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
-.main-row2-box1 {
-  border: 2px solid green;
-  flex: 1
+.row1-box2-box1 {
+  flex: 1;
+  background: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/4433663/jersey_city.0.jpg");
+  background-size: cover;
 }
 
-.main-row2-box2 {
-  border: 2px solid green;
-  flex: 1
+.row1-box2-box2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.main-row3-box1 {
-  border: 2px solid green;
-  flex: 1.8
+.row1-box2-box2 h4 {
+  margin-left: 10px;
+  padding:0;
+  margin-bottom: 4px;
 }
 
-.main-row3-box2 {
-  border: 2px solid green;
-  flex: 1
+.row1-box2-box2 p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.main-row2-transparent {
+  flex: 1;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/a4/df/23/a4df23128c945a55ff4a65179d8322bb--indigo-walls-dark-blue-walls.jpg");
+  background-size: cover;
+}
+
+.main-row2-box-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.row2-row1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.row2-row2 {
+  flex: 1;
+  display: flex;
+}
+
+.row2-row1-box1 {
+  flex: 1;
+  background: url("http://www.thefallssociety.com/wp-content/uploads/2016/03/phoi-canh-pp-2.jpg");
+  background-size: cover;
+}
+
+.row2-row1-box2 {
+  flex: 2;
+  background: url("http://media.istockphoto.com/photos/sunset-over-jersey-city-nj-picture-id185057298?k=6&m=185057298&s=612x612&w=0&h=D_XGp8tmovVRXKZkY6LprTLbs9YhRucZ6JrRIWTluPs=");
+  background-size: cover;
+}
+
+.row2-row2-box1 {
+  flex: 2;
+}
+
+.row2-row2-box1 p {
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row2-row2-box2 {
+  flex: 1;
+  background: url("https://28nwgk2wx3p52fe6o9419sg5-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/journal-squared-rendering-5.jpg");
+  background-size: cover;
 }
