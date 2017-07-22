@@ -4,12 +4,35 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: left;
+  color: white;
+  font-family: 'Arvo', serif;
+}
+
 .main-container {
   background-color: #fbe5d6;
   height: 100vh;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
+  background: #f0b7b7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ecc4c4, #7cafba); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ecc4c4, #7cafba); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ecc4c4, #7cafba); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ecc4c4, #7cafba); /* Standard syntax */
+}
+
+.main-box-header {
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .main-row1 {
@@ -36,11 +59,12 @@ body {
 .main-row1-box1 {
   border: 2px solid green;
   flex: 1;
-  background: #f0b7b7; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #f0b7b7, #7cafba); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #f0b7b7, #7cafba); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #f0b7b7, #7cafba); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #f0b7b7, #7cafba); /* Standard syntax */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .main-row1-box2 {
