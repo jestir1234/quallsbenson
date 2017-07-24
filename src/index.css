@@ -154,6 +154,10 @@ p {
   background-size: cover;
 }
 
+.main-row2-tranparent:hover{
+  cursor: pointer
+}
+
 .main-row2-box-container {
   flex: 3;
   display: flex;

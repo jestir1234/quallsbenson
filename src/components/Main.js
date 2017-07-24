@@ -9,8 +9,11 @@ class Main extends Component {
   }
   render() {
 
-    let modal = this.props.modalOn ? <Modal handleModalOff={this.props.handleModalOff}/> : null;
-    let feedModal = this.props.feedModalOn ? <FeedModal handleFeedModalOff={this.props.handleFeedModalOff}/> : null;
+    let modal = this.props.modalOn ? <Modal handleModalOff={this.props.handleModalOff} modalContent={this.props.modalContent}/> : null;
+    let feedModal = this.props.feedModalOn ?
+    <FeedModal
+      handleFeedModalOff={this.props.handleFeedModalOff}
+      feedModalContent={this.props.feedModalContent}/> : null;
     return (
       <div className="main-container">
         {modal}
@@ -18,7 +21,7 @@ class Main extends Component {
         <div className="main-row1">
           <div
             className="main-row1-box1"
-            onClick={(e) => this.props.handleModalOn()}>
+            onClick={(e) => this.props.handleModalOn("The Journal", "Journal Squared invites a new generation to up and coming Jersey City Lorem ipsum dolor sit amet, auctor ut. Id est, bibendum conubia nunc non nibh, dui natoque mattis a, quam accumsan suspendisse tellus. Lectus amet nibh, a facilisis bibendum integer, est dapibus vitae adipiscing")}>
             <h1 className="main-box-header">The Journal</h1>
             <p>Journal Squared invites a new generation to up and coming Jersey City Lorem ipsum dolor sit amet, auctor ut. Id est, bibendum conubia nunc non nibh, dui natoque mattis a, quam accumsan suspendisse tellus. Lectus amet nibh, a facilisis bibendum integer, est dapibus vitae adipiscing</p>
           </div>
@@ -28,7 +31,7 @@ class Main extends Component {
               onClick={() => this.props.handleFeedModalOn("Instagram", "https://cdn.vox-cdn.com/uploads/chorus_asset/file/4433663/jersey_city.0.jpg")}></div>
             <div
               className="row1-box2-box2"
-              onClick={() => this.props.handleFeedModalOn("Twitter", "Journal Squared invites a new generation to up and coming Jersey City")}>
+              onClick={() => this.props.handleModalOn("Twitter", "Journal Squared invites a new generation to up and coming Jersey City Lorem ipsum dolor sit amet, auctor ut. Id est, bibendum conubia nunc non nibh, dui natoque mattis a, quam accumsan suspendisse tellus. Lectus amet nibh, a facilisis bibendum integer, est dapibus vitae adipiscing")}>
               <h4>Twitter:</h4>
               <p>Journal Squared invites a new generation to up and coming Jersey City</p>
             </div>
@@ -36,7 +39,11 @@ class Main extends Component {
         </div>
 
         <div className="main-row2">
-          <div className="main-row2-transparent"></div>
+          <div
+            className="main-row2-transparent"
+            onClick={() => this.props.handleFeedModalOn("Instagram", "https://s-media-cache-ak0.pinimg.com/736x/a4/df/23/a4df23128c945a55ff4a65179d8322bb--indigo-walls-dark-blue-walls.jpg")}>
+
+          </div>
           <div className="main-row2-box-container">
             <div className="row2-row1">
               <div
@@ -50,7 +57,7 @@ class Main extends Component {
             <div className="row2-row2">
               <div
                 className="row2-row2-box1"
-                onClick={(e) => this.props.handleFeedModalOn("Architectural Digest", e.target.children[1].innerHTML)}>
+                onClick={(e) => this.props.handleFeedModalOn("Architectural Digest", e.target.innerText)}>
                 <h4>Architectural Digest:</h4>
                 <p>Journal Squared invites a new generation to up and coming Jersey City
 Aenean sagittis auctor velit eget rutrum. Curabitur vel ipsum sed eros interdum porta nec et dui. Curabitur ante felis, pharetra non fringilla quis, scelerisque ac orci. Nullam quis enim non leo mattis euismod ac id ipsum. Phasellus urna eros, auctor eget urna in, lacinia gravida justo. Nunc et enim sed odio placerat pharetra. Curabi- tur at nunc eu mi condimentum lobortis. Donec fringilla cursus rutrum. Mauris cursus molestie lorem, gravida tortor. Sed velit est, porta at rhoncus vitae, posu- ere. more...</p>

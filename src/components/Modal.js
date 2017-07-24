@@ -5,6 +5,7 @@ import {Icon} from 'react-fa'
 class Modal extends Component {
 
   render(){
+    let content = this.props.modalContent
     return (
       <div>
         <div
@@ -15,8 +16,8 @@ class Modal extends Component {
         <div className="modal">
         </div>
         <div className="modal-content">
-          <h1>The Journal</h1>
-          <p>Journal Squared invites a new generation to up and coming Jersey City leo mattis euismod ac id ipsum. Phasellus urna eros, auctor eget urna in, lacinia gravida justo.</p>
+          <h1>{content.title}</h1>
+          <p>{content.content}</p>
         </div>
       </div>
     )
