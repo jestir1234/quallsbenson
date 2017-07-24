@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import '../Nav.css';
 
 class Nav extends Component {
-  constructor(props){
-    super(props)
-  }
 
 
   render(){
     return(
       <div className="nav">
         <h2>JOURNAL SQUARED</h2>
-        <div className="tab-container">
+        <div
+          className="tab-container"
+          onClick={() => this.props.handleModalOn()}>
           <div className="tab-icon"></div>
           <h4>JOURNAL</h4>
         </div>

@@ -1,0 +1,86 @@
+.modal-container {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.feed-modal {
+  background: #f0b7b7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ecc4c4, #406c7c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ecc4c4, #406c7c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ecc4c4, #406c7c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ecc4c4, #406c7c); /* Standard syntax */
+  position: absolute;
+  height: 100vh;
+  width: 83.3vw;
+  overflow: auto;
+  opacity: .8;
+  display: flex;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+
+.left-container{
+  flex: 1;
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container{
+  flex: 1;
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-feed-container {
+  z-index: 50;
+  font-size: 50px;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.close-feed-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.close-feed-container:active{
+  color: #e7ddf0;
+  transform: scale(1.0);
+}
+
+.content-feed-container{
+  background-color: white;
+  height: 80%;
+  width: 90%;
+}
+
+.right-content {
+  background-color: white;
+  border: 6px solid black;
+  height: 90%;
+  width: 80%;
+}

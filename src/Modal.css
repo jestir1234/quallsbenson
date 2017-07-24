@@ -1,0 +1,74 @@
+.modal {
+  background: #f0b7b7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #406c7c, #ecc4c4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #406c7c, #ecc4c4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #406c7c, #ecc4c4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #406c7c, #ecc4c4); /* Standard syntax */
+  position: absolute;
+  height: 100vh;
+  width: 83.3vw;
+  overflow: auto;
+  opacity: .8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+
+.modal-content h1{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.modal-content p{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 14px;
+}
+
+.modal-content {
+  position: absolute;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.close-container {
+  position: absolute;
+  z-index: 50;
+  font-size: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.close-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.close-container:active{
+  color: #e7ddf0;
+  transform: scale(1.0);
+}

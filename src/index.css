@@ -68,16 +68,32 @@ p {
   padding-right: 30px;
 }
 
+.main-row1-box1:hover{
+  cursor: pointer;
+}
+
+.main-row1-box1:active{
+  transform: scale(.95);
+}
+
 .main-row1-box2 {
   flex: 1;
   display: flex;
   flex-direction: row;
 }
 
+.main-row1-box2:hover{
+  cursor: pointer;
+}
+
 .row1-box2-box1 {
   flex: 1;
   background: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/4433663/jersey_city.0.jpg");
   background-size: cover;
+}
+
+.row1-box2-box1:hover {
+  cursor: pointer;
 }
 
 .row1-box2-box2 {
@@ -87,10 +103,42 @@ p {
   align-items: flex-start;
 }
 
+.row1-box2-box2:hover{
+  cursor: pointer;
+}
+
+.row1-box2-box2:active{
+  transform: scale(.95);
+}
+
+.row2-row2-box1:hover{
+  cursor: pointer;
+}
+
+.row2-row2-box1:active{
+  transform: scale(.95);
+}
+
+.row1-box2-box2 h4 {
+  color: white;
+}
+
+.row2-box2-box2:hover{
+    cursor: pointer;
+}
+
 .row1-box2-box2 h4 {
   margin-left: 10px;
   padding:0;
   margin-bottom: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.row2-row2-box1 h4 {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .row1-box2-box2 p {
@@ -129,10 +177,18 @@ p {
   background-size: cover;
 }
 
+.row2-row1-box1:hover{
+  cursor: pointer;
+}
+
 .row2-row1-box2 {
   flex: 2;
   background: url("http://media.istockphoto.com/photos/sunset-over-jersey-city-nj-picture-id185057298?k=6&m=185057298&s=612x612&w=0&h=D_XGp8tmovVRXKZkY6LprTLbs9YhRucZ6JrRIWTluPs=");
   background-size: cover;
+}
+
+.row2-row1-box2:hover{
+  cursor: pointer;
 }
 
 .row2-row2-box1 {
@@ -149,4 +205,8 @@ p {
   flex: 1;
   background: url("https://28nwgk2wx3p52fe6o9419sg5-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/journal-squared-rendering-5.jpg");
   background-size: cover;
+}
+
+.row2-row2-box2:hover{
+    cursor: pointer;
 }
